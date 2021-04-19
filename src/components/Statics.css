@@ -1,0 +1,229 @@
+.statistics{
+    background-color: rgb(224, 224, 224);
+   height: 130vh;
+position: relative;
+}
+.statistics_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.statistics_title>h1{
+    margin: 0;
+    font-weight: 900;
+}
+.statistics_title>p{
+    margin: 0;
+    color: var(--grayish-violet);
+    font-weight: 600;
+    width: 35%;
+    text-align: center;
+}
+.statistics_blocks{
+display: flex;
+width: 80%;
+margin: 0 auto;
+margin-top: 60px;
+position: relative;
+
+}
+.statistics_card{
+    height:250px;
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+border-radius: 10px;
+z-index: 2;
+
+}
+.statistics_card >h3{
+    margin: 0;
+    color: var(--verydark-violet);
+}
+
+.statistics_card >img{
+    background-color: var(--verydark-blue);
+    padding:10px;
+    border-radius: 50%;
+position: absolute;
+top: -30px;
+left: 20px;
+}
+.statistics_card >p{
+    color: var(--grayish-violet);
+    font-weight: 500;
+    margin-top: 0px !important;
+}
+
+
+.horizontal_line{
+    background-color: var(--cyan);
+    height: 5px;
+    position: relative;
+    top: -150px;    ;
+    z-index: 1;
+    width: 70%;
+    
+}
+.statistics_blocks :nth-child(2){
+    position: relative;
+    top: 30px;
+}
+.statistics_blocks :nth-child(3){
+    position: relative;
+    top: 60px;
+}
+.shorten_block{
+    /* background-image: url('/bg-shorten-desktop.svg'); */
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+   position: relative;
+   top:-50px;
+   margin-top: 70px;
+}
+.shorten_input{
+    height: 40px;
+    width: 90%;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+::placeholder {
+    color: var(--gray);
+    font-size: 15px;
+    padding-left: 20px;
+
+  }
+.shorten_btn{
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: var(--cyan);
+    border: none;
+    border-radius: 10px;
+    width: 150px;   
+}
+.shorten_links{
+    display: flex;
+ width: 80%;
+ margin: 2px auto;
+ background-color: white;
+ padding:20px 10px;
+ font-weight: 600;   
+align-items: center;
+
+}
+.shorten_links >span:nth-child(2){
+    margin-left: auto;
+    color: var(--cyan);
+}
+.shorten_links >button{
+    background-color: var(--cyan);
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+@media  screen and (max-width:375px) {
+    .statistics{
+     height: fit-content;
+
+    }
+    .shorten_block{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;  
+        height: 150px;  
+        position: relative;
+        top:-75px;
+    }
+    .shorten_input{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .shorten_btn{
+        border-radius: 10px;
+        width: 100%;   
+    }
+    .statistics_title>p{
+        width: 90%;
+    }
+    .statistics_blocks{
+        display: flex;
+        flex-direction: column;
+       height: fit-content;
+    
+        }
+        .statistics_card{
+            height:100%;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+             border-radius: 10px;
+        text-align: center;
+        }
+        .horizontal_line{
+            display: none;
+            
+        }
+        .statistics_blocks :nth-child(2){
+            position: relative;
+            top:0px;
+        }
+        .statistics_blocks :nth-child(3){
+            position: relative;
+            top: 0px;
+        }
+        .statistics_card >h3{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--verydark-violet);
+        }
+        .statistics_card >img{
+        position: absolute;
+        top: -30px;
+        left: 35%;
+        }
+        .shorten_links{
+            width: 90%;
+            margin: 10px auto;
+            display: flex;
+        flex-direction: column;
+        align-items: end;
+     
+        }
+        .shorten_links >span:nth-child(2){
+            margin-left:0;
+            color: var(--cyan);
+            padding:5px 0;
+        }
+        .shorten_links >span:nth-child(1){
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+        }
+        .shorten_links >button{
+            background-color: var(--cyan);
+            width: 100%;
+            margin:0;
+        }
+        .statistics_title>h1{
+         text-align: center;
+        }
+    }

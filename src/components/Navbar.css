@@ -1,0 +1,119 @@
+.navbar_content{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.2fr auto;
+position: relative;
+align-items: center;
+}
+.navbar_options{
+    display: grid;
+    grid-template-columns: auto auto;
+  
+}
+.navbar_list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+
+}
+.navbar_logo{
+    width: 100px;
+}
+.navbar_item{
+    margin-left: 30px;
+    font-weight: 600;
+    color: var(--gray);
+}
+.navbar_right{
+    display: flex;
+    justify-self: end;
+    height: fit-content;
+    align-items: center;
+    margin: auto 0;
+    font-weight: 700;
+}
+
+.login{
+    color:var(--gray);
+    margin-right: 20px;
+}
+.sign_up{
+    color: white;
+    background-color: var(--cyan);
+    padding:5px 10px;
+    border-radius: 15px;
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ position: absolute;
+ right: 0px;
+ top:10px;
+ display: none;
+}
+.more >span{
+    height: 3px;
+    width: 30px;
+    background-color: var(--gray);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width : 375px){
+.more{
+display: flex;
+}
+.navbar_content{
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.navbar_logo{
+    padding-top: 10px;
+}
+.navbar_options{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--dark-violet);
+    height: 60vh;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+.navbar_list{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;   
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+.navbar_left{
+    border-bottom: 1px solid rgb(163, 162, 162);
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar_item{
+    margin-left: 0px;
+    color: white;
+}
+.navbar_right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;  
+    padding-top: 20px;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.login{
+    color:var(--gray);
+    margin-right: 0;
+    margin-top: -30px;
+    color: white;
+}
+}
